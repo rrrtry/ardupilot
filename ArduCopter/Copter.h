@@ -971,6 +971,12 @@ private:
 #if MODE_ZIGZAG_ENABLED == ENABLED
     ModeZigZag mode_zigzag;
 #endif
+#if MODE_JIDORI_ENABLED == ENABLED
+    ModeJidori mode_jidori;
+#endif
+#if MODE_POWERLESS_ENABLED == ENABLED
+    ModePowerless mode_powerless;
+#endif
 
     // mode.cpp
     Mode *mode_from_mode_num(const uint8_t mode);

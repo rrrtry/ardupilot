@@ -63,6 +63,18 @@ Copter::Mode *Copter::mode_from_mode_num(const uint8_t mode)
             break;
 #endif
 
+#if MODE_JIDORI_ENABLED == ENABLED
+        case JIDORI:
+            ret = &mode_jidori;
+            break;
+#endif
+
+#if MODE_POWERLESS_ENABLED == ENABLED
+        case POWERLESS:
+            ret = &mode_powerless;
+            break;
+#endif
+
 #if MODE_LOITER_ENABLED == ENABLED
         case LOITER:
             ret = &mode_loiter;
